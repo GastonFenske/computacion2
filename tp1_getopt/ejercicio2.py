@@ -29,7 +29,7 @@ def write_file():
     file_to_write = open(new_file, "w")
     file_to_write.writelines(lines)
     file_to_write.close()
-    print(f"El archivo {new_file}, fue sobreescribido correctamente")
+    print(f"El archivo {new_file}, fue sobreescrito correctamente")
 
 write_file()
 
