@@ -19,9 +19,9 @@ except getopt.GetoptError as error:
 for (op,ar) in opt:
     if op == '-o':
         ope = ar
-    if op == '-n':
+    elif op == '-n':
         num1 = int(ar)
-    if op == '-m':
+    elif op == '-m':
         num2 = int(ar)
 
 def calc(ope, num1, num2):
@@ -34,7 +34,8 @@ def calc(ope, num1, num2):
     elif ope == '/':
         print(num1/num2)
 
-if ope in["+","-","*",""]:
+
+if ope in["+","-","*","/"]:
     calc(ope, num1, num2)
 else:
     print("El operador es invaldo, por favor solo usar +, -, *, /")
